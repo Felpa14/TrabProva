@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Controle de estoque";
+}
+<div class="text-center">
+
+    <h1 class="display-4">Controle de Estoque</h1>
+
+    <table class="table table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Vendedor</th>
+                <th scope="col">Cliente</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Marca</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Alex</td>
+                <td>Frutaria Santana</td>
+                <td>Mexirica 100g</td>
+                <td>Fazenda do ze</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary btn-sm" asp-controller="ControleDeEstoque" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger btn-sm" asp-controller="ControleDeEstoque" asp-action="Apagar">Apagar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Han</td>
+                <td>S.A Comercio</td>
+                <td>Leite em po</td>
+                <td>Longa Vida</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary btn-sm" asp-controller="ControleDeEstoque" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger btn-sm" asp-controller="ControleDeEstoque" asp-action="Apagar">Apagar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Glados</td>
+                <td>Portal Computadores</td>
+                <td>Cabo Sata</td>
+                <td>Asus</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary btn-sm" asp-controller="ControleDeEstoque" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger btn-sm" asp-controller="ControleDeEstoque" asp-action="Apagar">Apagar</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="ControleDeEstoque" asp-action="Criar">Adicionar nova venda</a>
+    </div>
+</div>
